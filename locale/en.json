@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OpenCode Go Session Cost",
+    "description": "Shows what the current session costs on the OpenCode Go subscription, summed from the OpenCode console request log for the session's own time window."
+  }
+}

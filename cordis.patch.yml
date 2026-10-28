@@ -1,0 +1,6 @@
+- insert:
+    - id: opencode-go-session-cost
+      name: 'dsh-opencode-go-session-cost'
+      config:
+        credentialRef: OPENCODE_CONSOLE_COOKIE
+        cacheMs: 20000

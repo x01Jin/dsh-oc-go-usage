@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OpenCode Go 会话花费",
+    "description": "按会话自身的时间窗,从 OpenCode 控制台请求日志汇总当前会话在 OpenCode Go 订阅上的花费。"
+  }
+}

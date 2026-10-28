@@ -1,0 +1,54 @@
+{
+  "name": "dsh-opencode-go-session-cost",
+  "version": "1.0.0",
+  "description": "Per-session cost of the OpenCode Go subscription, read from the OpenCode console request log.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Jin (https://github.com/x01Jin)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x01Jin/dsh-oc-go-usage.git"
+  },
+  "homepage": "https://github.com/x01Jin/dsh-oc-go-usage#readme",
+  "bugs": {
+    "url": "https://github.com/x01Jin/dsh-oc-go-usage/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "opencode",
+    "opencode-go",
+    "cost",
+    "usage"
+  ],
+  "scripts": {
+    "test": "node --test test/summary.test.mjs test/client.test.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}
